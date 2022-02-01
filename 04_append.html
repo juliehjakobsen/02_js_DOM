@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="html-struktur.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Titel</h1>
+    </header>
+    <main>
+      <section>
+        <h2>Undertitel</h2>
+        <article id="article_1">
+          <img src="https://placeimg.com/430/300/nature" alt="natur" />
+          <h3>Article 1</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam
+            distinctio quae nostrum sapiente rerum velit animi nulla ipsam,
+            veniam incidunt ipsa vero tempore voluptates repudiandae illum
+            provident dolorum consectetur voluptas possimus nesciunt similique
+            iste ullam! Natus dolor itaque, aliquid eius qui esse, praesentium
+            harum doloribus minus optio iste est amet!
+          </p>
+        </article>
+        <article id="article_2">
+          <img src="https://placeimg.com/430/300/arch" alt="natur" />
+          <h3>Article 2</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi ut nam
+            quidem. Dolor pariatur sequi aperiam debitis minima illum error
+            voluptates nulla! Aliquid fugit omnis neque obcaecati exercitationem
+            repellendus necessitatibus deleniti sequi soluta accusantium magnam
+            autem doloremque minima quam laboriosam consectetur quaerat numquam
+            maiores assumenda labore nesciunt, suscipit illum? Fugiat?
+          </p>
+        </article>
+      </section>
+    </main>
+    <footer>
+      <h4>This is the footer</h4>
+    </footer>
+    <script>
+      // udvælg dom-elementer og laver dem til konstanter
+      const header = document.querySelector("h1");
+      console.log(header);
+
+      const undertitel = document.querySelector("h2");
+      console.log(undertitel);
+
+      const artikel_1 = document.querySelector("section");
+      console.log(artikel_1);
+
+      const img_1 = document.querySelector("#article_1 img");
+      console.log(img_1);
+
+      const h3_1 = document.querySelector("#article_1 h3");
+      console.log(h3_1);
+
+      const p_1 = document.querySelector("#article_1 p");
+      console.log(p_1);
+
+      const artikel_2 = document.querySelector("section:nth-child(2)");
+      console.log(artikel_2);
+
+      const img_2 = document.querySelector("#article_2 img");
+      console.log(img_2);
+
+      const h3_2 = document.querySelector("#article_2 h3");
+      console.log(h3_2);
+
+      const p_2 = document.querySelector("#article_2 p");
+      console.log(p_2);
+
+      //   udskifter tekstindhold i elementer
+      header.textContent = "En ny overskrift";
+
+      h3_1.textContent = "i dag har vi lært noget nyt";
+
+      p_1.textContent = "en helt vild fed opgave";
+
+      h3_2.textContent = "og jeg er sulten nu";
+
+      p_2.textContent = "så jeg vil spise frokost";
+
+      //   udskift billeder
+      img_1.src = "https://placeimg.com/430/300/people";
+      img_1.alt = "mennesker";
+
+      img_2.src = "https://placeimg.com/430/300/arc";
+      img_2.alt = "mennesker";
+
+      //   tilføjer nyt element
+      let nyartikel = document.querySelector("#article_1");
+
+      nyartikel.innerHTML =
+        "<h3>Ny artikel</h3><img src='https://placeimg.com/430/300/people'>";
+    </script>
+  </body>
+</html>
