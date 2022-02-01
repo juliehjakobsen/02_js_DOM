@@ -1,0 +1,26 @@
+header {
+  margin: 1px solid black;
+
+  display: grid;
+  place-content: center;
+
+  border: solid black 1px;
+}
+
+footer {
+  display: grid;
+  place-content: center;
+
+  border: solid black 1px;
+}
+
+.article_1,
+.article_2 {
+  border: solid black 1px;
+}
+
+section {
+  max-width: 1000px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
