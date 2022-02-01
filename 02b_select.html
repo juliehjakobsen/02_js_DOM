@@ -44,6 +44,7 @@
       <h4>This is the footer</h4>
     </footer>
     <script>
+      // udvælg dom-elementer og laver dem til konstanter
       const header = document.querySelector("h1");
       console.log(header);
 
@@ -74,6 +75,7 @@
       const p_2 = document.querySelector("#article_2 p");
       console.log(p_2);
 
+      //   udskifter tekstindhold i elementer
       header.textContent = "En ny overskrift";
 
       h3_1.textContent = "i dag har vi lært noget nyt";
@@ -83,6 +85,13 @@
       h3_2.textContent = "og jeg er sulten nu";
 
       p_2.textContent = "så jeg vil spise frokost";
+
+      //   udskift billeder
+      img_1.src = "https://placeimg.com/430/300/people";
+      img_1.alt = "mennesker";
+
+      img_2.src = "https://placeimg.com/430/300/people";
+      img_2.alt = "mennesker";
     </script>
   </body>
 </html>
