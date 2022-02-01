@@ -14,8 +14,8 @@ footer {
   border: solid black 1px;
 }
 
-.article_1,
-.article_2 {
+#article_1,
+#article_2 {
   border: solid black 1px;
 }
 
