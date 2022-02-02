@@ -10,6 +10,13 @@
         color: darkblue;
         line-height: 150%;
       }
+
+      .typo_2 {
+        font-family: monospace;
+        color: darkblue;
+        line-height: 150%;
+        font-size: 1.5rem;
+      }
     </style>
   </head>
 
@@ -50,6 +57,7 @@
       document.addEventListener("DOMContentLoaded", start);
 
       function start() {
+        //   taget fat i alle p'erne, lagt en eventlistener på og derefter en funktion der sagde, at når man klikkede på den, ville den tilføje klassen "typo"
         let alleP = document.querySelectorAll("p");
         alleP.forEach((p) => {
           p.addEventListener("click", () => {
@@ -57,9 +65,25 @@
           });
         });
 
+        // lavet en reset knap, hvor jeg fjerner klassen "typo"
         document.querySelector("button").addEventListener("click", () => {
           alleP.forEach((p) => {
             p.classList.remove("typo");
+          });
+        });
+
+        //   taget fat i alle h3'erne, lagt en eventlistener på og derefter en funktion der sagde, at når man klikkede på den, ville den tilføje klassen "typo"
+        let alleH3 = document.querySelectorAll("h3");
+        alleH3.forEach((h3) => {
+          h3.addEventListener("click", () => {
+            h3.classList.add("typo_2");
+          });
+        });
+
+        // lavet en reset knap, hvor jeg fjerner klassen "typo"
+        document.querySelector("button").addEventListener("click", () => {
+          alleH3.forEach((h3) => {
+            h3.classList.remove("typo_2");
           });
         });
       }
